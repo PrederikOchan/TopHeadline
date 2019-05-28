@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Top Headline</string>
+    <string name="search_news">Search news....</string>
 </resources>

@@ -6,33 +6,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.home.HomeActivity">
-
-    <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout"
+    
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            android:theme="@style/ToolbarTheme"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-        <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/searchBtn"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_marginRight="16dp"
-                android:layout_gravity="end"
-                android:background="@android:color/transparent"
-                android:src="@drawable/ic_search_white_24dp"/>
-        
-    </com.google.android.material.appbar.AppBarLayout>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewTopNews"
             android:layout_width="0dp"
             android:layout_height="0dp"
             tools:listitem="@layout/item_news"
-            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
