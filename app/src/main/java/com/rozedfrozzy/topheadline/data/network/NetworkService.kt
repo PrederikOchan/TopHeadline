@@ -70,15 +70,16 @@ class NetworkService {
         fun getTopHeadline(
             @Query("page") page: Int,
             @Query("category") category: String = "general",
-            @Query("country") country: String = "id",
-            @Query("pageSize") pageSize: Int = 15
+            @Query("country") country: String = "us",
+            @Query("pageSize") pageSize: Int = 10
         ): Single<NewsResponse>
 
         @GET("everything")
         fun getNewsQueries(
             @Query("q") query: String,
-            @Query("page") page: Int = 1,
-            @Query("pageSize") pageSize: Int = 15
+            @Query("page") page: Int,
+            @Query("language") language: String = "en",
+            @Query("pageSize") pageSize: Int = 10
         ): Single<NewsResponse>
     }
 }

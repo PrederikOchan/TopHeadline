@@ -20,7 +20,7 @@
                 tools:src="@drawable/ic_image_grey_24dp"/>
 
         <TextView
-                android:id="@+id/newsTitlw"
+                android:id="@+id/newsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -45,7 +45,7 @@
                 android:layout_marginTop="8dp"
                 tools:text="Content"
                 android:textSize="16sp"
-                android:maxLines="5"
+                android:maxLines="4"
                 android:ellipsize="end"/>
 
     </LinearLayout>
