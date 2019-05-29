@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_image_grey_24dp"/>
+                tools:src="@drawable/ic_image_grey_24dp"/>
 
         <TextView
                 android:id="@+id/newsTitlw"
@@ -39,7 +39,7 @@
                 android:textSize="14sp"/>
 
         <TextView
-                android:id="@+id/newsContent"
+                android:id="@+id/newsDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
