@@ -2,4 +2,6 @@
     <string name="app_name">Top Headline</string>
     <string name="search_news">Search news....</string>
     <string name="retry">Retry</string>
+    <string name="something_wrong">Something went wrong...</string>
+    <string name="no_internet_connection">No Internet Connections</string>
 </resources>

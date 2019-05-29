@@ -64,7 +64,7 @@ class HomeActivity : AppCompatActivity() {
         })
 
         viewModel.getResultTopHeadlineListErrorObservable().observe(this, Observer {
-            longToast("Something went wrong...")
+            longToast(getString(R.string.something_wrong))
             hideProgressBar()
         })
     }
@@ -86,7 +86,7 @@ class HomeActivity : AppCompatActivity() {
             viewModel.getHeadline(currentPage)
             showProgressBar()
         } else {
-            longToast("No Internet Connections")
+            longToast(getString(R.string.no_internet_connection))
         }
     }
 

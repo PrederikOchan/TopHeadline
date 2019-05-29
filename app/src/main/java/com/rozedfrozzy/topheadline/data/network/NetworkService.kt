@@ -78,6 +78,7 @@ class NetworkService {
         fun getNewsQueries(
             @Query("q") query: String,
             @Query("page") page: Int,
+            @Query("sortBy") sortBy: String = "publishedAt",
             @Query("language") language: String = "en",
             @Query("pageSize") pageSize: Int = 10
         ): Single<NewsResponse>
